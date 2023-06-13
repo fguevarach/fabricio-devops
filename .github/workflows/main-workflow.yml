@@ -12,5 +12,6 @@ jobs:
       - name: Run a online script
         run: |
           echo "Running WorkFlow in main branch"
+          hostname
           sleep 5
-          echo "This is from a different runner"
+          touch /tmp/fabricio13jun
