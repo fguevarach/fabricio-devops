@@ -7,7 +7,9 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: myrunner
     steps:
       - name: Run a online script
         run: echo "Running WorkFlow in main branch"
+        run: sleep 5
+        run: echo "This is from a different runner"
