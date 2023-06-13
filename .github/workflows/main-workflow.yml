@@ -15,3 +15,8 @@ jobs:
           hostname
           sleep 5
           touch /tmp/fabricio13jun
+      - name: second step
+        run: echo "Hello from second step"
+        if: github.event_name == 'push'
+      - name: third step
+        run: echo "hello"
