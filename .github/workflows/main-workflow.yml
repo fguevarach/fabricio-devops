@@ -10,6 +10,7 @@ jobs:
     runs-on: myrunner
     steps:
       - name: Run a online script
-        run: echo "Running WorkFlow in main branch"
-      - name: Another runner
-        run: echo "This is from a different runner"
+        run: |
+          echo "Running WorkFlow in main branch"
+          sleep 5
+          echo "This is from a different runner"
