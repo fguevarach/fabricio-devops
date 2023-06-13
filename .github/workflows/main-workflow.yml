@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Run a online script
         run: echo "Running WorkFlow in main branch"
-        run: sleep 5
+      - name: Another runner
         run: echo "This is from a different runner"
