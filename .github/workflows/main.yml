@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: echo "test started"
+      - run: eho "test started"
       - run: echo "test ended"
   deploy:
     runs-on: ubuntu-latest
