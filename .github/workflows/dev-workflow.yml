@@ -1,1 +1,17 @@
-
+name: dev-workflow
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a online script
+        run: |
+          echo "Running WorkFlow in DEV branch"
+          hostname
+          sleep 5
+          touch /tmp/fabricio14jun
