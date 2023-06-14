@@ -18,11 +18,11 @@ jobs:
     needs: build
     steps:
       - run: echo "test started"
-      - run: echo "test ended"      
-    if: ${{ always() }}
+      - run: eho "test ended"      
   deploy:
     runs-on: ubuntu-latest
     steps:
       - run: echo "deploy started"
       - run: echo "deploy ended"
     needs: test
+    if: ${{ always() }}
