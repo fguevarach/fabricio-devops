@@ -3,13 +3,20 @@ on:
   push
 env:
   DAY_OF_WEEK: Monday
+  First_Name: Fabricio
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
+      First_Name: Mark
     steps:
       - name: "Say Hello Mona, it's Monday"
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         env:
-          First_Name: Mona
+          First_Name: Eric
+  my_greeting_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Today is $DAY_OF_WEEK, hello $First_Name"
+    
