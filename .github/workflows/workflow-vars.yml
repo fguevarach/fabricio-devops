@@ -20,5 +20,5 @@ jobs:
     steps:
       - run: echo "Today is $DAY_OF_WEEK, hello $First_Name"
       - run: echo "the value of var1 is ${{ vars.var1 }}, and the day is ${{ vars.day }}"
-      - run: echo "To login use follow key ':' ${{ secret.passwd }}"
+      - run: echo "To login use follow key ':' ${{ secrets.passwd }}"
     
