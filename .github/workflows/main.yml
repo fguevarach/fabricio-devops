@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: first step
-        run: "Running WorkFlow in main branch"
+        run: echo "Running WorkFlow in main branch"
       - name: second step
         run: echo "Hello from second step - $env:RUNNER_OS."
         if: runner.os == 'Linux'
