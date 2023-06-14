@@ -19,4 +19,4 @@ jobs:
         run: echo "Hello from second step"
         if: github.event_name == 'push'
       - name: third step
-        run: echo "hello"
+        run: echo "$env:RUNNER_OS"
