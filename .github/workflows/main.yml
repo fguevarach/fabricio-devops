@@ -17,7 +17,7 @@ jobs:
     needs: build
     steps:
       - run: echo "test started"
-      - run: echo "test ended"      
+      - run: eho "test ended"      
     if: ${{ always() }}
   deploy:
     runs-on: ubuntu-latest
